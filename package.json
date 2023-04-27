@@ -21,6 +21,9 @@
     "typescript": "5.0.2"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "@babel/preset-typescript": "7.16.0",
     "@types/styled-components": "^5.1.26",
     "plop": "^3.1.1",
     "@typescript-eslint/eslint-plugin": "^5.13.0",
