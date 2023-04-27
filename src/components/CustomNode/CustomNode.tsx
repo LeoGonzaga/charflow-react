@@ -1,7 +1,7 @@
-import React from "react";
 import { Handle, NodeProps, Position } from "reactflow";
 import Tag from "../Tag";
 import Text from "../Text";
+import React from "react";
 import { Styles } from "./style";
 import { CSSProperties } from "styled-components";
 
