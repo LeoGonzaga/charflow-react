@@ -1,12 +1,4 @@
-import { createGlobalStyle } from "styled-components";
-
-export const lightTheme = {
-  PRIMARY: "#117EFF",
-  SECONDARY: "#FAF3C0",
-  TERTIARY: "#23232C",
-  TEXT: "#3E4157",
-  BACKGROUND: "#F9F9F9",
-};
+import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
 
@@ -20,63 +12,53 @@ body, button,input {
   padding: 0;
   font-weight: 400;
   font-style: normal;
+  overflow-y: hidden;
+  overflow-x: hidden;
+
 }
-
 body{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  font-family: 'Nunito Sans', sans-serif;
-
-  #__next {
-    width: 100%;
-  }
+  font-family: 'Montserrat', sans-serif;
+  background-color: #292a2d;
 
   p {
     margin: unset;
   }
-
   hr {
     margin-bottom: 0;
   }
 }
-
-
 input, textarea, button {
   font-family: 'Montserrat', sans-serif;
 }
 
-.diagram-component {
-  height: 100vh;
-  border: solid 1px black;
-  background-color: white;
+
+
+.modalOverlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(18, 18, 18, 0.7);
+  z-index: 101 !important;
 }
 
-.react-flow__controls-zoomin{
-  border-top-left-radius:24px;
-  border-bottom-left-radius:24px;
+.tooltip-font{
+font-size: 10px !important;
+border: 1px solid #898990 !important;
+background: #292a2d !important;
+padding: 6px !important;
 }
 
-.react-flow__controls-interactive{
-  border-top-right-radius:24px;
-  border-bottom-right-radius:24px;
-}
-.react-flow__controls{
-  border-radius: 50%;
-  width: 233px;
-
+.__react_component_tooltip::before,
+.__react_component_tooltip::after {
+  content: none !important;
 }
 
-.react-flow__controls-button{
-  height: 36px;
-  width: 100%;
-
+.szh-menu__item:hover{
+ color: #000 !important;
 }
-
-
-.stroke{
-  stroke: 10px;
-}
-
 `;
